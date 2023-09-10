@@ -27,7 +27,7 @@ const ModalField = ({ handleOpen, handleClose}) => {
 
 
     const handleSubmit = (values) => {
-        if (isUpdate){
+        if (!!isUpdate){
             dispatch(editUser(values, user.id))
         }else {
             dispatch(addUser(values))

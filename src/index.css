@@ -12,6 +12,46 @@ code {
     monospace;
 }
 
+* {
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  background-color: #2e3d85;
+  color: white;
+}
+
+/*header button {*/
+/*  color: white;*/
+/*}*/
+
+.header-container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav{
+  display: flex;
+  gap: 20px;
+}
+
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.boxBtn {
+  display: flex;
+  gap: 10px;
+}
+
+
 
 .container {
   max-width: 1240px;

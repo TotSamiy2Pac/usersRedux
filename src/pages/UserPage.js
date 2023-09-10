@@ -4,6 +4,7 @@ import {addUser, getUsers} from "../redux/action/userAction";
 import CustomTable from "../components/Table";
 import ModalField from "../components/ModalField";
 import {CLOSE, OPEN} from "../redux/types/types";
+import Header from "../components/Header";
 const UserPage = () => {
     const dispatch = useDispatch()
     const users = useSelector(state => state.usersReducer.users)
@@ -18,10 +19,13 @@ const UserPage = () => {
     },[])
 
     return (
-        <div className={'container'}>
-            <ModalField handleOpen={handleOpen} handleClose={handleClose}/>
-            <CustomTable users={users} />
-        </div>
+        <>
+            <Header/>
+            <div className={'container'}>
+                <ModalField handleOpen={handleOpen} handleClose={handleClose}/>
+                <CustomTable users={users} />
+            </div>
+        </>
     );
 };
 

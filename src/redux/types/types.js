@@ -6,3 +6,5 @@ export const DELETE_USER = 'DELETE_USER'
 export const OPEN = 'OPEN'
 export const CLOSE = 'CLOSE'
 export const SET_USER = 'SET_USER';
+export const REGIS_USER = 'REGIS_USER'
+export const AUTH_USER = 'AUTH_USER'
