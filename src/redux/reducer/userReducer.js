@@ -1,4 +1,4 @@
-import {ADD_USER, AUTH_USER, CLOSE, DELETE_USER, EDIT_USER, GET_USERS, OPEN, SET_USER} from "../types/types";
+import {ADD_USER, AUTH_USER, CLOSE, DELETE_USER, EDIT_USER, GET_USERS, LOG_OUT, OPEN, SET_USER} from "../types/types";
 
 
 const initialState = {
@@ -28,6 +28,8 @@ export default function  usersReducer (state = initialState, action) {
             return {...state, isOpen: false, isUpdate: false, user: {}}
         case AUTH_USER:
             return {...state, isAuth: true, token: action.payload.access_token}
+        case LOG_OUT:
+            return {...state, isAuth: false}
         default:
             return state
     }

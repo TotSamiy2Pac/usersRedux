@@ -15,7 +15,7 @@ const App = () => {
 
 
 
-    console.log(isAuth)
+    // console.log(isAuth)
 
     return (
         <Routes>

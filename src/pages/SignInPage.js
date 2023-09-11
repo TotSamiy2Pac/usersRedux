@@ -32,7 +32,7 @@ const SignInPage = () => {
     const handleSubmit = (values) => {
         dispatch(signInUser(values))
         notify()
-        console.log(isAuth)
+        // console.log(isAuth)
     }
 
 
